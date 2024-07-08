@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="https://jakarta.ee/xml/ns/persistence/orm"
+                 version="3.0">
+
+    <entity class="com.entity.StudentEntity">
+        <table name="student" schema="mydb" catalog=""/>
+        <attributes>
+            <id name="idstudent">
+                <column name="idstudent"/>
+            </id>
+            <basic name="studentName">
+                <column name="studentName"/>
+            </basic>
+            <basic name="studenPassword">
+                <column name="studenPassword"/>
+            </basic>
+            <basic name="currentYear">
+                <column name="currentYear"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

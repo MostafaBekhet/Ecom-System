@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="https://jakarta.ee/xml/ns/persistence/orm"
+                 version="3.0">
+
+    <entity class="com.entity.CourseEntity">
+        <table name="course" schema="mydb" catalog=""/>
+        <id-class class="com.entity.CourseEntityPK"/>
+        <attributes>
+            <id name="idcourse">
+                <column name="idcourse"/>
+            </id>
+            <id name="staffIdstaff">
+                <column name="staff_idstaff"/>
+            </id>
+            <basic name="courseName">
+                <column name="courseName"/>
+            </basic>
+            <basic name="courseYear">
+                <column name="courseYear"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

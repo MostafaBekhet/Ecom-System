@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="https://jakarta.ee/xml/ns/persistence/orm"
+                 version="3.0">
+
+    <entity class="com.entity.CourseHasStudentEntity">
+        <table name="course_has_student" schema="mydb" catalog=""/>
+        <id-class class="com.entity.CourseHasStudentEntityPK"/>
+        <attributes>
+            <id name="courseIdcourse">
+                <column name="course_idcourse"/>
+            </id>
+            <id name="studentIdstudent">
+                <column name="student_idstudent"/>
+            </id>
+            <basic name="passed">
+                <column name="passed"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>
